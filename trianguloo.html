@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caracterización de Triángulos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2>Tu Triangulo</h2>
+            <img id="modalTriangleImage" src="" alt="Triángulo">
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="triangle-title">Caracterización de Triángulos</h1>
+        <div class="triangle-box">
+            <div class="input-container">
+                <div class="input-group">
+                    <label for="A">Lado A:</label>
+                    <input type="number" id="A">
+                </div>
+                <div class="input-group">
+                    <label for="B">Lado B:</label>
+                    <input type="number" id="B">
+                </div>
+                <div class="input-group">
+                    <label for="C">Lado C:</label>
+                    <input type="number" id="C">
+                </div>
+            </div>
+            <button onclick="calcularTriangulo()">Calcular</button>
+            <p id="tipo_lados"></p>
+            <p id="tipo_angulos"></p>
+            <p id="angulos"></p>
+        </div>
+    </div>
+
+    <script src="img.js"></script>
+
+</body>
+</html>
